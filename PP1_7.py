@@ -12,47 +12,37 @@ def q1():
 def q2():
   integer = input("Input an integer: ")
   integer1= int(integer)
-  bool= True
-  bool2 = False
-  bool= integer1 > 5
-  print(bool)
-  bool2 = integer1 < 5
-  print (bool2)
+  bool1 = bool(integer1>5)
+  print (bool1)
+  
 
 def q3():
-  letter = input("Input letter a:")
-  bool= True
-  bool2 = False
-  bool = (letter == "a")
-  print(bool)
-  bool2 = (letter > "a")
-  print (bool2)
+  letter = input("Input the letter a: ")
+  bool1 = bool(letter== 'a' )
+  print(bool1)
+  
+
 def q4():
   word= input("Input a word earlier in the dictionary than google: ")
-  bool = True
-  bool2 = False
-  bool= (word < "google")
-  print (bool)
-  bool2 = (word > "google")
-  print (bool2)
+  bool1= bool(word < "google")
+  print (bool1)
+  
 
 def q5():
   integer= input("Input an integer: ")
   integer1 = (int(integer))
   integer2= input ("Input another integer: ")
   integer3 = (int(integer2))
-  print ("Your numbers multiplied together is greater than 40: ")
-  bool = True
-  bool2 = False
-  bool = (integer1*integer3)>40
-  print (bool)
-  bool2 = (integer1*integer3)>40
-  print (bool2)
+  integer4 = int(integer1*integer3)
+  bool1 = bool(integer4>40)
+  print (f"Your numbers multiplied together are greater than 40: {bool1}")
+  
+  
 #Do edit the code below
 #Comment the lines below when running your tests
 
-# q1()
-# q2()
-# q3()
-# q4()
-# q5()
+#q1()
+#q2()
+#q3()
+#q4()
+#q5()
